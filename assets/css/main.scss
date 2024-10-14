@@ -1,0 +1,40 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+$background: #22282f;
+$text: #e3e3e3;
+
+// @import "aa";
+@import "bootstrap/bootstrap";
+
+body {
+  color: $text;
+  background-color: $background;
+}
+
+.box {
+    background-color: #1b1e22;
+    border-radius: 30px;
+    padding: 2em;
+
+    table {
+        width: 100%;
+        margin: 0.8em 0;
+
+        td {
+            padding: 0.4em;
+            border: 1px solid #515151;
+        }
+    }
+}
+
+.footer {
+    background-color: #1b1e22;
+    font-size: 0.8rem;
+}
+
+a {
+    color: #596aee;
+}
