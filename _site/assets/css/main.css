@@ -11865,7 +11865,7 @@ body {
 }
 
 .info-box {
-  min-height: 200px;
+  min-height: 360px;
 }
 
 .button {
@@ -11874,6 +11874,7 @@ body {
   border-radius: 30px;
   text-decoration: none;
   margin: 0.2em;
+  display: inline-block;
 }
 
 .light {
@@ -11895,6 +11896,11 @@ body {
 
 a {
   color: #596aee;
+}
+
+.accommodation-features {
+  font-size: 0.9em;
+  color: #96a2b0;
 }
 
 /*# sourceMappingURL=main.css.map */
