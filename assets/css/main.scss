@@ -45,18 +45,32 @@ body {
     text-decoration: none;
     margin: 0.2em;
     display: inline-block;
+
+    transition: all 300ms;
 }
 
 .light {
     background-color: $gray;
+
+    &:hover {
+        background-color: darken($gray, 20%);
+    }
 }
 
 .blue {
     background-color: $blue;
+
+    &:hover {
+        background-color: darken($blue, 20%);
+    }
 }
 
 .purple {
     background-color: $purple;
+
+    &:hover {
+        background-color: darken($purple, 20%);
+    }
 }
 
 .footer {
@@ -65,7 +79,11 @@ body {
 }
 
 a {
-    color: $blue;
+    color: $text;
+
+    &:hover {
+        color: darken(white, 20%);
+    }
 }
 
 .accommodation-features {
