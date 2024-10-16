@@ -6,6 +6,17 @@
   <title>{{ page.title }} | Garage Trip</title>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TF98L99080"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TF98L99080');
+</script>
+
 <body class="d-flex flex-column h-100 ">
   {% include header.html %}
   <div class="container">
