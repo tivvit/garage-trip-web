@@ -33,6 +33,21 @@ body {
             border: 1px solid #515151;
         }
     }
+
+    h3 {
+        margin-bottom: 30px;
+
+        &::after {
+            content: " ";
+            margin: 8px 0;
+            display: block;
+            background: $purple;
+            height: 2px;
+            width: 100px;
+
+            position: absolute;
+        }
+    }
 }
 
 .comment-box {
