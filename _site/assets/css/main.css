@@ -11852,7 +11852,7 @@ body {
 
 .box {
   background-color: #1b1e22;
-  border-radius: 30px;
+  border-radius: 32px;
   padding: 2em;
 }
 .box table {
@@ -11864,6 +11864,11 @@ body {
   border: 1px solid #515151;
 }
 
+.comment-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+
 .info-box {
   min-height: 360px;
 }
@@ -11871,7 +11876,7 @@ body {
 .button {
   color: white;
   padding: 1em 1.4em;
-  border-radius: 30px;
+  border-radius: 32px;
   text-decoration: none;
   margin: 0.2em;
   display: inline-block;

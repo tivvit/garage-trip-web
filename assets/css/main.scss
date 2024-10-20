@@ -35,6 +35,11 @@ body {
     }
 }
 
+.comment-box {
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: $radius/2;
+}
+
 .info-box {
     min-height: 360px;
 }
