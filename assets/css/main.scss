@@ -281,6 +281,11 @@ a {
     width: 120px;
     height: auto;
 
+    &:hover,
+    &:active {
+        color: #cccccc;
+    }
+
     svg {
         width: 100%;
     }
