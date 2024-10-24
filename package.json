@@ -5,5 +5,9 @@
     "mhtml2html": "^3.0.0",
     "punycode": "^2.3.1",
     "punycode.js": "^2.3.1"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "serve": "jekyll serve"
   }
 }

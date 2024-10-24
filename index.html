@@ -3,70 +3,103 @@ layout: default
 title: Event 6.9
 id: home
 ---
-<div class="row py-5">
-    <div class="col text-center">
-        <h1>Garage Trip 6.9</h1>
+<div class="container" style="padding: 5rem 0">
+    <div class="row text-center">
+        <h1 class="mb-3">Garage Trip 6.9</h1>
         <p><em>nice</em></p>
     </div>
-</div>
 
-<div class="row">
-    <div class="col-lg-6 offset-lg-3 col-xxl-4 offset-xxl-4 text-center">
-        <div class="row">
-            <div class="col-lg-6">
-                <a href="https://forms.gle/VVTcqsUrWKvuSpXx6" class="button purple" target="_blank"><i
-                        class="bi bi-calendar-check"></i>&nbsp;&nbsp;&nbsp;Join the event</a>
+    <div class="row">
+        <div class="col-lg-6 offset-lg-3 col-xxl-4 offset-xxl-4 text-center">
+            <div class="row gy-4">
+                <div class="col-lg-6">
+                    {% include button-link.html
+                        url="https://forms.gle/VVTcqsUrWKvuSpXx6"
+                        text="Join the event"
+                        icon="event"
+                        variant="purple"
+                    %}
+                </div>
+                <div class="col-lg-6">
+                    {% include button-link.html
+                        url="https://www.google.com/url?q=https%3A%2F%2Fdiscord.gg%2FTnaMJMyTDw&sa=D&sntz=1&usg=AOvVaw3YQU0DYutiJ5kX9ptEAJi9"
+                        text="Join our Discord"
+                        icon="discord"
+                        variant="blue"
+                    %}
+                </div>
             </div>
-            <div class="col-lg-6">
-                <a href="https://www.google.com/url?q=https%3A%2F%2Fdiscord.gg%2FTnaMJMyTDw&sa=D&sntz=1&usg=AOvVaw3YQU0DYutiJ5kX9ptEAJi9"
-                   class="button blue" target="_blank"><i
-                        class="bi bi-discord"></i>&nbsp;&nbsp;&nbsp;Join our Discord</a>
+        </div>
+    </div>
+</div>
+
+<div class="row gy-3 mb-4">
+    <div class="col-lg-4">
+        <div class="box info-box">
+            <img class="info-box-bg illu-calendar" src="/assets/svg/illu-calendar.svg" width="384" height="284" />
+            <div class="info-box-inner">
+                <h3>Save the date</h3>
+                <p class="subtitle">20&nbsp;–&nbsp;27&nbsp;/&nbsp;9&nbsp;/&nbsp;2025</p>
+                <div class="info-box-inner-footer">
+                    {% include button-link.html
+                        url="https://evt.to/egiehgodw"
+                        text="Add to calendar"
+                        icon="google-calendar"
+                    %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="box info-box">
+            <img class="info-box-bg illu-location" src="/assets/svg/illu-location.svg" width="384" height="224" />
+            <div class="info-box-inner">
+                <h3>Location</h3>
+                <p class="subtitle">Chalupa Nový Svět<br>
+                    Prostřední Lipka 74<br>
+                    Králíky, Orlické hory</p>
+
+                <div class="info-box-inner-footer">
+                    {% include button-link.html
+                        url="https://maps.app.goo.gl/zRF3NoHsnYzASQaR9"
+                        text="Google Maps"
+                        icon="google-maps"
+                    %}
+                    {% include button-link.html
+                        url="https://mapy.cz/s/mejeturodo"
+                        text="Mapy.cz"
+                        icon="mapy-cz"
+                    %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="box info-box">
+            <img class="info-box-bg illu-sauna" src="/assets/svg/illu-sauna.svg" width="256" height="225" />
+            <div class="info-box-inner">
+                <h3>Accommodation</h3>
+                <p class="subtitle">Cottage "Novy Svet"</p>
+                <ul class="accommodation-features">
+                    <li>32 people | 14 rooms</li>
+                    <li>14 000 m<sup>2</sup> garden with pond and outdoor playground</li>
+                    <li>Ton of seating</li>
+                    <li>Grill, 4 taps and Sauna</li>
+                    <li>Two-story children's corner</li>
+                </ul>
+                <div class="info-box-inner-footer">
+                    {% include button-link.html
+                        url="https://www.novysvetlipka.cz/ubytovani-chalupa-novy-svet-prostredni-lipka-orlicke-hory.html"
+                        text="More information"
+                        icon="website"
+                    %}
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="row py-5">
-    <div class="col-lg-4 mt-2">
-        <div class="box info-box">
-            <h3>Save the date</h3>
-            <p>20&nbsp;-&nbsp;27.9.2025</p>
-            <p class="mt-4 text-end"><a href="https://evt.to/egiehgodw" class="button light" target="_blank"><i
-                    class="bi bi-calendar-event"></i>&nbsp;&nbsp;&nbsp;Add to
-                calendar</a></p>
-        </div>
-    </div>
-    <div class="col-lg-4 gy-2">
-        <div class="box info-box">
-            <h3>Location</h3>
-            <p>Chalupa Nový Svět<br>
-                Prostřední Lipka 74<br>
-                Králíky, Orlické hory</p>
-
-                <p class="mt-4 text-end"><a href="https://maps.app.goo.gl/zRF3NoHsnYzASQaR9" class="button light" target="_blank"><i
-                    class="bi bi-map"></i>&nbsp;&nbsp;&nbsp;Map</a></p>                
-        </div>
-    </div>
-    <div class="col-lg-4 gy-2">
-        <div class="box info-box">
-            <h3>Accommodation</h3>
-            <p>Cottage "Novy Svet"</p>
-            <ul class="accommodation-features">
-                <li>32 people | 14 rooms</li>
-                <li>14 000 m<sup>2</sup> garden with pond and outdoor playground</li>
-                <li>Ton of seating</li>
-                <li>Grill, 4 taps and Sauna</li>
-                <li>Two-story children's corner</li>
-            </ul>
-            <p class="mt-4 text-end"><a
-                    href="https://www.novysvetlipka.cz/ubytovani-chalupa-novy-svet-prostredni-lipka-orlicke-hory.html"
-                    class="button light" target="_blank"><i
-                    class="bi bi-globe"></i>&nbsp;&nbsp;&nbsp;More information</a></p>
-        </div>
-    </div>
-</div>
-
-<div class="row">
+<div class="row mb-4">
     <div class="col">
         <div class="box">
             <h3>Invitation</h3>
@@ -84,11 +117,11 @@ id: home
     </div>
 </div>
 
-<div class="row pt-2">
+<div class="row mb-4">
     <div class="col">
         <div class="box">
             <h3>Feedback</h3>
-            <div class="row">
+            <div class="row gy-3">
                 <div class="col-lg-4">
                     <div class="comment-box p-3"><em>Nerdvana.</em></div>
                 </div>
