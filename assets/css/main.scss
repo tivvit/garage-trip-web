@@ -278,21 +278,14 @@ a {
 }
 
 .logo {
-    width: 120px;
-    height: auto;
-
     &:hover,
     &:active {
         color: #cccccc;
     }
 
-    svg {
-        width: 100%;
-    }
-
-    @media #{$breakpoint-desktop} {
-        width: 144px;
-    }
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .footer {
