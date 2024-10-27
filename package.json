@@ -1,6 +1,8 @@
 {
+  "type": "module",
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "flat-map": "^1.0.0",
     "gulp": "^5.0.0",
     "mhtml2html": "^3.0.0",
     "punycode": "^2.3.1",
@@ -9,5 +11,13 @@
   "scripts": {
     "gulp": "gulp",
     "serve": "jekyll serve"
+  },
+  "devDependencies": {
+    "gulp-clone": "^2.0.1",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imagemin": "^9.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-scale-images": "^3.0.3",
+    "gulp-webp": "^5.0.0"
   }
 }

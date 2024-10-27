@@ -131,6 +131,67 @@ id: home
                 <div class="col-lg-4">
                     <div class="comment-box p-3"><em>Never attended an event like this before.</em></div>
                 </div>
+            </div>
         </div>
     </div>
 </div>
+
+<div class="row mb-4">
+    <div class="col">
+        <div class="box images">
+            <h3>Images</h3>
+            <div class="row gy-3 mb-3">
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/walk.webp' | relative_url }}" class="img-thumbnail" alt="Outdoor walk" id="myImage" data-bs-toggle="modal" data-bs-target="#imageModal">
+                </div>
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/drinks.webp' | relative_url }}" class="img-thumbnail" alt="Drinks">
+                </div>
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/gaming.webp' | relative_url }}" class="img-thumbnail" alt="Gaming">
+                </div>
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/bbq.webp' | relative_url }}" class="img-thumbnail" alt="BBQ">
+                </div>
+            </div>
+
+            <div class="row gy-3 ">
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/intro.webp' | relative_url }}" class="img-thumbnail" alt="Intro talk">
+                </div>
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/board-game.webp' | relative_url }}" class="img-thumbnail" alt="Board Game">
+                </div>
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/hookah.webp' | relative_url }}" class="img-thumbnail" alt="Hookah">
+                </div>
+                <div class="col-lg-3">
+                    <img src="{{ '/assets/images/400/az.webp' | relative_url }}" class="img-thumbnail" alt="AZ Quiz">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body">
+                <img src="" id="modalImage" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const modalImage = document.getElementById('modalImage');
+    const imageModal = new bootstrap.Modal(document.getElementById('imageModal'), {})
+
+    document.querySelectorAll('.images img').forEach(image => {
+        image.addEventListener('click', () => {
+            console.log(image.src.replace("/400/", "/2000/"));
+            modalImage.src = image.src.replace("/400/", "/2000/");
+            imageModal.show();
+        });
+    });
+</script>
