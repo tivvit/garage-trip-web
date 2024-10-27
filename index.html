@@ -189,7 +189,6 @@ id: home
 
     document.querySelectorAll('.images img').forEach(image => {
         image.addEventListener('click', () => {
-            console.log(image.src.replace("/400/", "/2000/"));
             modalImage.src = image.src.replace("/400/", "/2000/");
             imageModal.show();
         });
